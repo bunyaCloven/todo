@@ -15,4 +15,9 @@ public class TaskList {
 	public void refresh() {
 		// FIXME: empty
 	}
+
+	@Override
+	public String toString() {
+		return store.toString();
+	}
 }
