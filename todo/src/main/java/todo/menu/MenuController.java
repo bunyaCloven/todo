@@ -1,4 +1,4 @@
-package todo;
+package todo.menu;
 
 import java.util.Scanner;
 
@@ -18,7 +18,8 @@ public class MenuController implements Runnable {
 			System.out.print(menuView.getAsString());
 			Scanner input = new Scanner(System.in);
 			option = input.next();
-			menu.processInput(option);
+			menu = menu.processInput(option);
+			menuView.setMenu(menu);
 		} while (option != "q");
 	}
 }

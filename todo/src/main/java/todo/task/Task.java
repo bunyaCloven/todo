@@ -1,6 +1,5 @@
-package todo;
+package todo.task;
 
-import java.time.Instant;
 import java.util.Date;
 
 public class Task {
@@ -15,7 +14,7 @@ public class Task {
 
 	@Override
 	public String toString() {
-		return title + ":" + period.toString();
+		return title + ":" + deadline + "(" + period.toString() + ")";
 	}
 
 	public void setStatus(TaskStatus status) {

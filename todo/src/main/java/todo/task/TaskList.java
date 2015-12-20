@@ -1,4 +1,4 @@
-package todo;
+package todo.task;
 
 public class TaskList {
 	private TaskStore store;

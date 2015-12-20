@@ -1,4 +1,4 @@
-package todo;
+package todo.menu;
 
 public class MenuView {
 	private Menu menu;
@@ -9,6 +9,14 @@ public class MenuView {
 
 	public String getAsString() {
 		return menu.getCurrent();
+	}
+
+	public Menu getMenu() {
+		return menu;
+	}
+
+	public void setMenu(Menu menu) {
+		this.menu = menu;
 	}
 
 }
