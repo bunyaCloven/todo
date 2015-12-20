@@ -1,4 +1,4 @@
-package todo;
+package todo.task;
 
 import java.util.LinkedList;
 import java.util.List;
