@@ -1,16 +1,24 @@
 package todo;
 
+import java.util.Scanner;
+
 public class MenuController implements Runnable {
 	private Menu menu;
 	private MenuView menuView;
 
-	public MenuController() {
-		menu = new Menu();
-		menuView = new MenuView(menu);
+	public MenuController(Menu model, MenuView view) {
+		menu = model;
+		menuView = view;
 	}
 
 	@Override
 	public void run() {
-		System.out.println(menuView.getAsString());
+		String option;
+		do {
+			System.out.print(menuView.getAsString());
+			Scanner input = new Scanner(System.in);
+			option = input.next();
+			menu.processInput(option);
+		} while (option != "q");
 	}
 }

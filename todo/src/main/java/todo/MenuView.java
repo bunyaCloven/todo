@@ -8,7 +8,7 @@ public class MenuView {
 	}
 
 	public String getAsString() {
-		return menu.getAsString();
+		return menu.getCurrent();
 	}
 
 }

@@ -3,6 +3,10 @@ package todo;
 public class TaskList {
 	private TaskStore store;
 
+	public TaskList(TaskStore store) {
+		setStore(store);
+	}
+
 	public TaskStore getStore() {
 		return store;
 	}

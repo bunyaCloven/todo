@@ -4,9 +4,10 @@ public class TaskApplication {
 
 	public static void main(String... args) {
 		TaskStore model = new TaskStore();
-		TaskList view = new TaskList();
-		TaskController controller = new TaskController(model, view);
-		new MenuController().run();
+		TaskList view = new TaskList(model);
+		Menu menu = new Menu(model, view);
+		MenuView menuView = new MenuView(menu);
+		new MenuController(menu, menuView).run();
 	}
 
 }
