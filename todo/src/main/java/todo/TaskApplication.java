@@ -6,7 +6,7 @@ public class TaskApplication {
 		TaskStore model = new TaskStore();
 		TaskList view = new TaskList();
 		TaskController controller = new TaskController(model, view);
-		controller.run();
+		new MenuController().run();
 	}
-	
+
 }

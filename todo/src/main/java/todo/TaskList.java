@@ -18,10 +18,6 @@ public class TaskList {
 
 	@Override
 	public String toString() {
-		StringBuilder result = new StringBuilder();
-		for (Task task : store.getTasks()) {
-			result.append(task.toString());
-		}
-		return result.toString();
+		return store.toString();
 	}
 }

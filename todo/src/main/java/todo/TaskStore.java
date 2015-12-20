@@ -10,6 +10,15 @@ public class TaskStore {
 		tasks = new LinkedList<>();
 	}
 
+	@Override
+	public String toString() {
+		StringBuilder result = new StringBuilder();
+		for (Task task : getTasks()) {
+			result.append(task.toString());
+		}
+		return result.toString();
+	}
+
 	public List<Task> getTasks() {
 		return tasks;
 	}
