@@ -10,7 +10,7 @@ public class TaskStore {
 		tasks = new LinkedList<>();
 	}
 
-	public List<Task> addTask() {
+	public List<Task> getTasks() {
 		return tasks;
 	}
 

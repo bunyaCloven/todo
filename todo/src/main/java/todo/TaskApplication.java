@@ -8,5 +8,5 @@ public class TaskApplication {
 		TaskController controller = new TaskController(model, view);
 		controller.run();
 	}
-
+	
 }
