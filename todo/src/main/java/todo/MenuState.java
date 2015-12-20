@@ -1,5 +1,5 @@
 package todo;
 
 public enum MenuState {
-	MAIN
+	MAIN, ADD_TASK , LIST_TASKS,
 }
