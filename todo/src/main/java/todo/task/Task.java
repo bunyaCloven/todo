@@ -14,7 +14,8 @@ public class Task {
 
 	@Override
 	public String toString() {
-		return title + ":" + deadline + "(" + period.toString() + ")";
+		return title + ":" + deadline + "(" + period.toString() + "-"
+				+ status.toString() + ")";
 	}
 
 	public void setStatus(TaskStatus status) {

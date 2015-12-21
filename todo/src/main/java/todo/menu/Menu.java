@@ -7,7 +7,7 @@ public abstract class Menu {
 	protected TaskStore model;
 	protected TaskList view;
 
-	public Menu(TaskStore store, TaskList list) {
+	protected Menu(TaskStore store, TaskList list) {
 		model = store;
 		view = list;
 	}
